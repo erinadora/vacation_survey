@@ -31,9 +31,11 @@ $(document).ready(function() {
     } else if (solo === "Solo" && party === "No") {
       $(".home").show();
       $(".section1").hide();
-    } else {
+    } else if (solo === "Solo" && passport === "No") {
       $(".home").show();
       $(".section1").hide();
+    } else {
+      alert("Sorry, does not compute.")
     }
 
     event.preventDefault();
