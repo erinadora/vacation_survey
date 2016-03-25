@@ -4,6 +4,7 @@ $(document).ready(function() {
   $("img.arrow1").hide().fadeIn(2600);
 
   $("#survey").submit(function(event) {
+    $("body").addClass("body1");
 
     var passport = $("input#passport").val();
     var party = $("input#party").val();
