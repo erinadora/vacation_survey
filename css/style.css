@@ -3,11 +3,15 @@ body {
 }
 
 .container {
+
+}
+
+.section1 {
   width: 900px;
   margin: auto;
 }
 
-header {
+.section1 {
   margin: 40px auto;
   text-align: center;
   margin-bottom: 50px;
@@ -38,4 +42,98 @@ h2 {
 label {
   font-weight: 100;
   letter-spacing: 1px;
+}
+
+img.arrow1{
+  margin: auto;
+  height: 100px;
+  display: block;
+  transition: all .2s ease-in-out;
+}
+
+.arrow1 a:hover {
+  transform: scale(1.1);
+}
+
+.patagonia .arrow1 {
+  width: 100px;
+  text-align: center!important;
+  margin: auto;
+}
+
+.patagonia, .vegas, .tokyo, .home {
+  display: none;
+}
+
+.btn {
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+  color: #fff;
+  background-color: #999;
+  box-shadow: 1px 3px 15px 5px #ccc;
+  margin-bottom: 50px;
+  font-weight: 100;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  border: 1px groove #999;
+  color: #fff;
+  cursor: crosshair;
+}
+
+.destinations {
+  margin: auto;
+  width: 100%;
+}
+
+.destinations h2 {
+  font-size: 50px;
+  text-decoration: none;
+  margin: 20px;
+  text-align: center!important;
+}
+
+.destinations img.patagonia {
+  margin: auto;
+  text-align: center;
+}
+
+#player.controls-wrapper {
+  display: none;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-rapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.patagonia, .vegas, .home, .tokyo {
+  text-align: center;
+  margin: auto;
+}
+
+.destinations p {
+  margin: 20px;
+  font-size: 45px;
+  font-weight: 100;
+}
+
+input {
+  width: 100px!important;
+  margin: auto;
+  text-align: center;
+  font-family: "helvetica neue";
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 35px;
 }

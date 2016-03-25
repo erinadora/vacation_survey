@@ -1,49 +1,29 @@
 $(document).ready(function() {
 
-  $("button.pan").click(function() {
-    $(".panda").show();
-    $(".panda").siblings().hide();
+  $("#next").hide().fadeIn(1600);
+  $("img.arrow1").hide().fadeIn(1600);
 
-  });
+  $("#survey").submit(function(event) {
 
-  $("button.turt").click(function() {
-    $(".turtle").show();
-    $(".turtle").siblings().hide();
-  });
+    var passport = $("input#passport").val();
+    var party = $("input#party").val();
+    var nature = $("input#nature").val();
+    var solo = $("input#solo").val();
 
-  $("button.wild").click(function() {
-    $(".cat").show();
-    $(".cat").siblings().hide();
-  });
-
-  $("button.all").click(function() {
-    var animal = prompt("Type one: Panda, Turtle, Cat");
-
-    if (animal === "panda") {
-      $(".panda").show();
-    } else if (animal === "turtle") {
-      $(".turtle").show();
+    if (passport === "Yes" && party === "Yes") {
+      $(".tokyo").show();
+      $(".section1").hide();
+    } else if (passport === "Yes" && party === "No") {
+      $(".patagonia").show();
+      $(".section1").hide();
+    } else if (passport === "No" && party === "Yes") {
+      $(".vegas").show();
+      $(".section1").hide();
     } else {
-      $(".cat").show();
+      $(".home").show();
+      $(".section1").hide();
     }
-  });
-});
 
-
-
-
-$(document).ready(function(event) {
-  $("#celeb").submit(function(event) {
     event.preventDefault();
-    var gender = $("input#gender").val();
-    var age = parseInt($("input#age").val());
-    console.log("we've established variables");
-    if(gender === "male" && age < 25) {
-      alert("Your perfect match is Selena Gomez!!");
-    } else if (gender === "male" && age > 25) {
-      alert("Your perfect match is Sandra Buttocks!!");
-    } else {
-      alert("Your perfect match is Hugh Jackman!!");
-    }
   });
 });
