@@ -1,0 +1,41 @@
+body {
+  font-family: "helvetica neue";
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+}
+
+header {
+  margin: 40px auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h1, h2 {
+  font-family: "helvetica neue";
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+#survey {
+  margin: auto;
+  text-align: center;
+  width: 400px;
+  font-family: "helvetica neue";
+  font-size: 25px;
+}
+
+label {
+  font-weight: 100;
+  letter-spacing: 1px;
+}
